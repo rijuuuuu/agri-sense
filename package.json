@@ -1,0 +1,22 @@
+{
+  "name": "agrisense-platform",
+  "version": "1.0.0",
+  "description": "AgriSense — AI-Powered Agricultural Decision-Support Platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix client",
+    "dev:all": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "node server/dist/server/src/index.js",
+    "share": "concurrently \"npm run start\" \".\\cloudflared.exe tunnel --url http://localhost:3001\"",
+    "test": "npm run test --prefix server"
+  },
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

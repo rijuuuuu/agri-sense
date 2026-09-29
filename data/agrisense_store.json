@@ -1,0 +1,766 @@
+{
+  "farmer": {
+    "id": "farmer-1790572633662",
+    "authUserId": "auth-farmer-1790572633662",
+    "fullName": "Makesh",
+    "phoneNumber": "+91-9876543210",
+    "preferredLanguage": "en",
+    "farmingExperienceYears": 2,
+    "approximateBudget": 60000,
+    "createdAt": "2026-09-28T05:39:22.565Z",
+    "updatedAt": "2026-09-28T05:39:22.565Z"
+  },
+  "farmers": [
+    {
+      "id": "farmer-1790572633662",
+      "authUserId": "auth-farmer-1790572633662",
+      "fullName": "Makesh",
+      "phoneNumber": "+91-9876543210",
+      "preferredLanguage": "en",
+      "farmingExperienceYears": 2,
+      "approximateBudget": 60000,
+      "createdAt": "2026-09-28T05:39:22.565Z",
+      "updatedAt": "2026-09-28T05:39:22.565Z"
+    }
+  ],
+  "farms": [
+    {
+      "id": "farm-1790572633664",
+      "farmerId": "farmer-1790572633662",
+      "farmName": "Makesh farm",
+      "totalAreaAcres": 3.5,
+      "latitude": 29.6857,
+      "longitude": 76.9905,
+      "villageDistrict": "coimbatore",
+      "stateProvince": "Tamil Nadu",
+      "country": "India",
+      "createdAt": "2026-09-28T05:39:22.567Z",
+      "updatedAt": "2026-09-28T05:39:22.567Z"
+    }
+  ],
+  "fields": [],
+  "soilProfiles": [
+    {
+      "id": "soil-farm-1790572633664",
+      "farmId": "farm-1790572633664",
+      "soilType": "alluvial",
+      "phLevel": 6.8,
+      "drainageQuality": "well_drained"
+    }
+  ],
+  "waterProfiles": [
+    {
+      "id": "water-farm-1790572633664",
+      "farmId": "farm-1790572633664",
+      "waterSource": "borewell",
+      "availabilityStatus": "sufficient",
+      "irrigationMethod": "drip"
+    }
+  ],
+  "crops": [
+    {
+      "id": "crop-wheat",
+      "commonName": "Wheat (Gehun)",
+      "scientificName": "Triticum aestivum",
+      "category": "grain",
+      "suitableSeasons": [
+        "rabi"
+      ],
+      "minTempCelsius": 10,
+      "maxTempCelsius": 25,
+      "optimalRainfallMmMin": 300,
+      "optimalRainfallMmMax": 750,
+      "minSoilPh": 6,
+      "maxSoilPh": 7.5,
+      "preferredSoilTypes": [
+        "alluvial",
+        "clay_loam",
+        "silt_loam"
+      ],
+      "durationDaysMin": 110,
+      "durationDaysMax": 140,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 1800,
+      "estimatedCostPerAcre": 14000,
+      "managementComplexity": "low",
+      "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+    },
+    {
+      "id": "crop-rice",
+      "commonName": "Rice / Paddy (Dhan)",
+      "scientificName": "Oryza sativa",
+      "category": "grain",
+      "suitableSeasons": [
+        "kharif"
+      ],
+      "minTempCelsius": 20,
+      "maxTempCelsius": 38,
+      "optimalRainfallMmMin": 900,
+      "optimalRainfallMmMax": 2000,
+      "minSoilPh": 5.5,
+      "maxSoilPh": 7.2,
+      "preferredSoilTypes": [
+        "clay_loam",
+        "alluvial"
+      ],
+      "durationDaysMin": 120,
+      "durationDaysMax": 155,
+      "waterRequirementLevel": "high",
+      "averageYieldPerAcreKg": 2200,
+      "estimatedCostPerAcre": 18000,
+      "managementComplexity": "medium",
+      "description": "Primary monsoon grain. High water requirement, suitable for heavy soils with standing water retention."
+    },
+    {
+      "id": "crop-cotton",
+      "commonName": "Cotton (Kapas)",
+      "scientificName": "Gossypium hirsutum",
+      "category": "cash",
+      "suitableSeasons": [
+        "kharif"
+      ],
+      "minTempCelsius": 21,
+      "maxTempCelsius": 35,
+      "optimalRainfallMmMin": 500,
+      "optimalRainfallMmMax": 1000,
+      "minSoilPh": 6,
+      "maxSoilPh": 8,
+      "preferredSoilTypes": [
+        "black",
+        "alluvial"
+      ],
+      "durationDaysMin": 150,
+      "durationDaysMax": 180,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 1000,
+      "estimatedCostPerAcre": 22000,
+      "managementComplexity": "high",
+      "description": "High-value cash fiber crop. Thrives in deep black cotton soils with good drainage."
+    },
+    {
+      "id": "crop-mustard",
+      "commonName": "Mustard (Sarson)",
+      "scientificName": "Brassica juncea",
+      "category": "oilseed",
+      "suitableSeasons": [
+        "rabi"
+      ],
+      "minTempCelsius": 10,
+      "maxTempCelsius": 24,
+      "optimalRainfallMmMin": 250,
+      "optimalRainfallMmMax": 500,
+      "minSoilPh": 6,
+      "maxSoilPh": 7.5,
+      "preferredSoilTypes": [
+        "sandy_loam",
+        "alluvial"
+      ],
+      "durationDaysMin": 100,
+      "durationDaysMax": 130,
+      "waterRequirementLevel": "low",
+      "averageYieldPerAcreKg": 800,
+      "estimatedCostPerAcre": 10500,
+      "managementComplexity": "low",
+      "description": "Drought-tolerant winter oilseed with relatively low input cost and high market demand."
+    },
+    {
+      "id": "crop-tomato",
+      "commonName": "Tomato (Tamatar)",
+      "scientificName": "Solanum lycopersicum",
+      "category": "vegetable",
+      "suitableSeasons": [
+        "kharif",
+        "rabi",
+        "zaid",
+        "year_round"
+      ],
+      "minTempCelsius": 15,
+      "maxTempCelsius": 32,
+      "optimalRainfallMmMin": 400,
+      "optimalRainfallMmMax": 700,
+      "minSoilPh": 6,
+      "maxSoilPh": 7,
+      "preferredSoilTypes": [
+        "sandy_loam",
+        "clay_loam",
+        "red"
+      ],
+      "durationDaysMin": 90,
+      "durationDaysMax": 120,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 12000,
+      "estimatedCostPerAcre": 35000,
+      "managementComplexity": "high",
+      "description": "High-value horticultural crop with short duration and high returns, but sensitive to pest pressure and temperature spikes."
+    },
+    {
+      "id": "crop-chickpea",
+      "commonName": "Chickpea / Bengal Gram (Chana)",
+      "scientificName": "Cicer arietinum",
+      "category": "pulse",
+      "suitableSeasons": [
+        "rabi"
+      ],
+      "minTempCelsius": 12,
+      "maxTempCelsius": 28,
+      "optimalRainfallMmMin": 350,
+      "optimalRainfallMmMax": 600,
+      "minSoilPh": 6,
+      "maxSoilPh": 8,
+      "preferredSoilTypes": [
+        "black",
+        "clay_loam",
+        "alluvial"
+      ],
+      "durationDaysMin": 95,
+      "durationDaysMax": 120,
+      "waterRequirementLevel": "low",
+      "averageYieldPerAcreKg": 950,
+      "estimatedCostPerAcre": 11000,
+      "managementComplexity": "low",
+      "description": "Key pulse crop that fixes atmospheric nitrogen, restoring soil health with low water needs."
+    },
+    {
+      "id": "crop-maize",
+      "commonName": "Maize / Corn (Makka)",
+      "scientificName": "Zea mays",
+      "category": "grain",
+      "suitableSeasons": [
+        "kharif",
+        "rabi",
+        "zaid"
+      ],
+      "minTempCelsius": 18,
+      "maxTempCelsius": 34,
+      "optimalRainfallMmMin": 500,
+      "optimalRainfallMmMax": 900,
+      "minSoilPh": 5.8,
+      "maxSoilPh": 7.5,
+      "preferredSoilTypes": [
+        "alluvial",
+        "red",
+        "sandy_loam"
+      ],
+      "durationDaysMin": 85,
+      "durationDaysMax": 110,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 2400,
+      "estimatedCostPerAcre": 15500,
+      "managementComplexity": "medium",
+      "description": "Versatile cereal for food, feed, and starch. Rapid growth with responsive yield to balanced nutrition."
+    }
+  ],
+  "cropCycles": [
+    {
+      "id": "cycle-1790572633672",
+      "farmId": "farm-1790572633664",
+      "cropId": "crop-wheat",
+      "crop": {
+        "id": "crop-wheat",
+        "commonName": "Wheat (Gehun)",
+        "scientificName": "Triticum aestivum",
+        "category": "grain",
+        "suitableSeasons": [
+          "rabi"
+        ],
+        "minTempCelsius": 10,
+        "maxTempCelsius": 25,
+        "optimalRainfallMmMin": 300,
+        "optimalRainfallMmMax": 750,
+        "minSoilPh": 6,
+        "maxSoilPh": 7.5,
+        "preferredSoilTypes": [
+          "alluvial",
+          "clay_loam",
+          "silt_loam"
+        ],
+        "durationDaysMin": 110,
+        "durationDaysMax": 140,
+        "waterRequirementLevel": "medium",
+        "averageYieldPerAcreKg": 1800,
+        "estimatedCostPerAcre": 14000,
+        "managementComplexity": "low",
+        "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+      },
+      "sowingDate": "2026-09-28",
+      "expectedHarvestDate": "2027-01-16",
+      "currentStage": "vegetative",
+      "plantedAreaAcres": 3.5,
+      "status": "active"
+    },
+    {
+      "id": "cycle-1790573962571",
+      "farmId": "farm-1790572633664",
+      "cropId": "crop-wheat",
+      "crop": {
+        "id": "crop-wheat",
+        "commonName": "Wheat (Gehun)",
+        "scientificName": "Triticum aestivum",
+        "category": "grain",
+        "suitableSeasons": [
+          "rabi"
+        ],
+        "minTempCelsius": 10,
+        "maxTempCelsius": 25,
+        "optimalRainfallMmMin": 300,
+        "optimalRainfallMmMax": 750,
+        "minSoilPh": 6,
+        "maxSoilPh": 7.5,
+        "preferredSoilTypes": [
+          "alluvial",
+          "clay_loam",
+          "silt_loam"
+        ],
+        "durationDaysMin": 110,
+        "durationDaysMax": 140,
+        "waterRequirementLevel": "medium",
+        "averageYieldPerAcreKg": 1800,
+        "estimatedCostPerAcre": 14000,
+        "managementComplexity": "low",
+        "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+      },
+      "sowingDate": "2026-09-28",
+      "expectedHarvestDate": "2027-01-16",
+      "currentStage": "vegetative",
+      "plantedAreaAcres": 3.5,
+      "status": "active"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-irrig-2026-09-28",
+      "farmId": "farm-1790572633664",
+      "cropCycleId": "cycle-1790572633672",
+      "category": "irrigation",
+      "title": "Hold scheduled irrigation",
+      "description": "Rain probability is 84%. Postpone irrigation to avoid waterlogging and root asphyxiation in your alluvial soil.",
+      "priority": "high",
+      "dueDate": "2026-09-28",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Derived from Open-Meteo precipitation forecast (84% probability) and well_drained drainage profile."
+    },
+    {
+      "id": "task-stage-2026-09-28",
+      "farmId": "farm-1790572633664",
+      "cropCycleId": "cycle-1790572633672",
+      "category": "pest_monitoring",
+      "title": "Field inspection for Wheat (Gehun)",
+      "description": "Inspect crop canopy uniformity and weed competition in the vegetative stage.",
+      "priority": "medium",
+      "dueDate": "2026-09-28",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Triggered by Wheat (Gehun) lifecycle stage (VEGETATIVE)."
+    },
+    {
+      "id": "task-weather-2026-09-28",
+      "farmId": "farm-1790572633664",
+      "cropCycleId": "cycle-1790572633672",
+      "category": "field_prep",
+      "title": "Optimal weather window for foliar nourishment",
+      "description": "Wind is calm (3.5 km/h) and rain risk is low. Favorable conditions for foliar nutrient or bio-fertilizer application.",
+      "priority": "low",
+      "dueDate": "2026-09-28",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Wind and rain parameters are within safe agrochemical application windows."
+    },
+    {
+      "id": "task-prep-2026-09-28",
+      "farmId": "farm-1790572633664",
+      "cropCycleId": "cycle-1790572633672",
+      "category": "fertilization",
+      "title": "Record farm input expenses",
+      "description": "Log any recent seed, fertilizer, or labor costs in Farm Economics to keep your What-If margin analysis accurate.",
+      "priority": "low",
+      "dueDate": "2026-09-28",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Continuous financial intelligence update."
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-user-1790571900747",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "What is the best time to sow paddy?",
+      "createdAt": "2026-09-28T05:05:00.747Z"
+    },
+    {
+      "id": "msg-1790571900750",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello Farmer. Here is the current context for your farm (**Primary Farm**):\n\n- **Planted Crop:** Wheat (VEGETATIVE stage)\n- **Soil & Water:** alluvial soil (pH 6.8) with sufficient water via drip\n- **Current Weather:** 26°C, Mainly clear / partly cloudy (37% rain probability)\n- **Agricultural Outlook:** Moderate rain probability. Consider deficit or partial irrigation, monitoring topsoil moisture.\n\nHow can I assist your farm today? You can ask:\n- *\"Should I irrigate today?\"*\n- *\"What fertilizer should I consider for my Wheat in vegetative?\"*\n- *\"Why are my leaves changing color?\"*\n- *\"What can I plant next season on my 1 acres?\"*",
+      "createdAt": "2026-09-28T05:05:00.750Z",
+      "contextSnapshot": {
+        "farmName": "Primary Farm",
+        "cropName": "Wheat",
+        "weatherSummary": "26°C, 37% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Profile: Primary Farm",
+        "Soil Profile: alluvial (pH 6.8)",
+        "Weather Telemetry: 26°C, 37% rain probability",
+        "Agronomic Rule Matrix (ICAR & Agro-Meteorological Standards)"
+      ]
+    },
+    {
+      "id": "msg-user-1790572445513",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "hi",
+      "createdAt": "2026-09-28T05:14:05.513Z"
+    },
+    {
+      "id": "msg-1790572445516",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello Farmer. Here is the current context for your farm (**Primary Farm**):\n\n- **Planted Crop:** Wheat (VEGETATIVE stage)\n- **Soil & Water:** alluvial soil (pH 6.8) with sufficient water via drip\n- **Current Weather:** 26°C, Mainly clear / partly cloudy (37% rain probability)\n- **Agricultural Outlook:** Moderate rain probability. Consider deficit or partial irrigation, monitoring topsoil moisture.\n\nHow can I assist your farm today? You can ask:\n- *\"Should I irrigate today?\"*\n- *\"What fertilizer should I consider for my Wheat in vegetative?\"*\n- *\"Why are my leaves changing color?\"*\n- *\"What can I plant next season on my 1 acres?\"*",
+      "createdAt": "2026-09-28T05:14:05.516Z",
+      "contextSnapshot": {
+        "farmName": "Primary Farm",
+        "cropName": "Wheat",
+        "weatherSummary": "26°C, 37% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Profile: Primary Farm",
+        "Soil Profile: alluvial (pH 6.8)",
+        "Weather Telemetry: 26°C, 37% rain probability",
+        "Agronomic Rule Matrix (ICAR & Agro-Meteorological Standards)"
+      ]
+    },
+    {
+      "id": "msg-user-1790572474088",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "how is the weather today",
+      "createdAt": "2026-09-28T05:14:34.089Z"
+    },
+    {
+      "id": "msg-1790572474091",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello Farmer. Here is the current context for your farm (**Primary Farm**):\n\n- **Planted Crop:** Wheat (VEGETATIVE stage)\n- **Soil & Water:** alluvial soil (pH 6.8) with sufficient water via drip\n- **Current Weather:** 26°C, Mainly clear / partly cloudy (37% rain probability)\n- **Agricultural Outlook:** Moderate rain probability. Consider deficit or partial irrigation, monitoring topsoil moisture.\n\nHow can I assist your farm today? You can ask:\n- *\"Should I irrigate today?\"*\n- *\"What fertilizer should I consider for my Wheat in vegetative?\"*\n- *\"Why are my leaves changing color?\"*\n- *\"What can I plant next season on my 1 acres?\"*",
+      "createdAt": "2026-09-28T05:14:34.091Z",
+      "contextSnapshot": {
+        "farmName": "Primary Farm",
+        "cropName": "Wheat",
+        "weatherSummary": "26°C, 37% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Profile: Primary Farm",
+        "Soil Profile: alluvial (pH 6.8)",
+        "Weather Telemetry: 26°C, 37% rain probability",
+        "Agronomic Rule Matrix (ICAR & Agro-Meteorological Standards)"
+      ]
+    },
+    {
+      "id": "msg-user-1790574794463",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "hi",
+      "createdAt": "2026-09-28T05:53:14.463Z"
+    },
+    {
+      "id": "msg-1790574795529",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello **Makesh**! How can I assist you and your farm (**Makesh farm**) today?\n\nI am your **AgriSense Farm Copilot**. I have real-time, context-aware access across your entire AgriSense platform:\n- **Standing Crop:** Wheat (Gehun) in the **VEGETATIVE** stage\n- **Field Weather in coimbatore:** 23.8°C, Thunderstorm (84% rain probability, wind 2.2 km/h)\n- **Today's Actions:** **4** tasks awaiting completion\n- **Tamil Nadu Market Rates:** Live wholesale APMC mandi data connected\n\n**What I can do for you right now:**\n- **Answer any agronomic question** (irrigation, fertilizer calculation, pest diagnostics, weather impact)\n- **Update your crop lifecycle stage** (e.g., *\"Update crop stage to Flowering\"*)\n- **Complete farm operational tasks** (e.g., *\"Show my tasks\"* or *\"Mark irrigation as completed\"*)\n- **Inspect regional market prices** (e.g., *\"Show Tamil Nadu mandi rates\"*)\n- **Simulate financial outcomes** (e.g., *\"Open What-If Economics\"* or calculate breakeven)",
+      "createdAt": "2026-09-28T05:53:15.529Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "dashboard",
+        "label": "View Farm Dashboard"
+      }
+    },
+    {
+      "id": "msg-user-1790574804008",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "should I irrigate today?",
+      "createdAt": "2026-09-28T05:53:24.008Z"
+    },
+    {
+      "id": "msg-1790574804010",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "### 🛑 Irrigation Advisory: **HOLD / POSTPONE**\nBased on real-time Open-Meteo telemetry for **coimbatore**:\n\n1. **Precipitation Alert:** There is a **84%** rain probability forecast today.\n2. **Soil Protection:** Irrigating right before rainfall on your **alluvial** soil risks waterlogging and root hypoxia.\n3. **Current Crop Stage:** Your **Wheat (Gehun)** is in the **VEGETATIVE** stage. Ensure perimeter drainage channels are unclogged.\n4. **Action Plan:** Hold off running your drip system. Inspect field soil moisture tomorrow morning after the weather event passes.",
+      "createdAt": "2026-09-28T05:53:24.010Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "dashboard",
+        "label": "View Live Weather Radar"
+      }
+    },
+    {
+      "id": "msg-user-1790574804023",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "update crop stage to flowering",
+      "createdAt": "2026-09-28T05:53:24.023Z"
+    },
+    {
+      "id": "msg-1790574804026",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Understood, Makesh! I am ready to transition your **Wheat (Gehun)** lifecycle stage to **FLOWERING**.\n\n**What happens when this stage is updated:**\n1. Your AgriSense Action Calendar will immediately calibrate new tasks tailored for the **FLOWERING** stage.\n2. Nutrient and pest surveillance advisories will automatically adjust for peak physiological health.\n3. Telemetry monitoring will track moisture and stress thresholds specific to this phase.\n\nClick the action button below to execute this update directly inside your app:",
+      "createdAt": "2026-09-28T05:53:24.026Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "update_stage",
+        "target": "flowering",
+        "label": "✅ Update Wheat (Gehun) to FLOWERING"
+      }
+    },
+    {
+      "id": "msg-user-1790574804044",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "what are the mandi rates for wheat in Tamil Nadu?",
+      "createdAt": "2026-09-28T05:53:24.044Z"
+    },
+    {
+      "id": "msg-1790574804069",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Here is the verified Agricultural Market Intelligence for **Tamil Nadu**:\n\n- **Paddy / Rice (Ponni / Samba):** ₹2,450/qtl (RISING at Thanjavur DPC Market (Tamil Nadu))\n- **Coconut (De-husked / Kopra):** ₹2,950/qtl (RISING at Pollachi Regulated Market (Tamil Nadu))\n- **Turmeric (Finger Grade):** ₹14,250/qtl (RISING at Erode Turmeric Yard (Tamil Nadu))\n- **Banana (Nendran / Poovan):** ₹3,350/qtl (STABLE at Gandhi Market, Tiruchirappalli (Tamil Nadu))\n\n**State Agro-Economic Summary:**\n- **Regional Focus:** Cauvery Delta Rice Belt, Coimbatore-Pollachi Coconut Corridor & Western Kongu Spices\n- **Procurement & Support Policy:** TNCSC Direct Purchase Centres (DPC) offering State Incentive Bonus of ₹100/quintal over MSP for Paddy\n- **Quality Advisory:** Delta Samba harvest arrivals are peaking. Ensure paddy grain moisture is strictly below 17% for swift DPC acceptance.\n\nWould you like to examine detailed arrivals, historical price curves, or compare with another state?",
+      "createdAt": "2026-09-28T05:53:24.069Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "market",
+        "label": "Open Full Tamil Nadu Market View"
+      }
+    },
+    {
+      "id": "msg-user-1790574804085",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "detect my gps location",
+      "createdAt": "2026-09-28T05:53:24.085Z"
+    },
+    {
+      "id": "msg-1790574804087",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "### 📍 AgriSense Location Status\n- **Resolved District & State:** **coimbatore**, **Tamil Nadu**, India\n- **Telemetry Station:** Open-Meteo High Resolution Agro-Grid\n- **Market APMC Alignment:** Tamil Nadu Mandi Benchmark Feed\n\nYou can trigger a fresh browser GPS scan anytime using the button below:",
+      "createdAt": "2026-09-28T05:53:24.087Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "detect_location",
+        "label": "Refresh GPS Location"
+      }
+    },
+    {
+      "id": "msg-user-1790574804095",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "what fertilizer should I apply?",
+      "createdAt": "2026-09-28T05:53:24.095Z"
+    },
+    {
+      "id": "msg-1790574804097",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "### 🌱 Nutrient & Fertilizer Guidance for **Wheat (Gehun)** (VEGETATIVE Stage)\nSoil Profile: **alluvial** (pH: **6.8**)\n\n1. **Nutrient Priorities:**\n   - In the **vegetative** stage, prioritize balanced nitrogen with bio-stimulants. For grain crops, split application of Urea ensures steady vegetative elongation without leaching.\n   - For soil pH 6.8, phosphorus availability is optimal. Maintain micronutrient zinc levels to prevent leaf bronzing.\n2. **Application Rules:**\n   - Weather is currently **23.8°C** with **84%** rain probability.\n   - Apply only when soil holds moderate moisture. Never broadcast granular fertilizer over water-stressed dry soil or under midday sun.\n3. **Organic Enhancers:** Incorporating well-rotted Farm Yard Manure (FYM) or vermicompost will improve water holding capacity in alluvial soil.",
+      "createdAt": "2026-09-28T05:53:24.097Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "actions",
+        "label": "Check Scheduled Fertilizer Tasks"
+      }
+    },
+    {
+      "id": "msg-user-1790574839405",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "hi",
+      "createdAt": "2026-09-28T05:53:59.405Z"
+    },
+    {
+      "id": "msg-1790574839408",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello **Makesh**! How can I assist you and your farm (**Makesh farm**) today?\n\nI am your **AgriSense Farm Copilot**. I have real-time, context-aware access across your entire AgriSense platform:\n- **Standing Crop:** Wheat (Gehun) in the **VEGETATIVE** stage\n- **Field Weather in coimbatore:** 23.8°C, Thunderstorm (84% rain probability, wind 2.2 km/h)\n- **Today's Actions:** **4** tasks awaiting completion\n- **Tamil Nadu Market Rates:** Live wholesale APMC mandi data connected\n\n**What I can do for you right now:**\n- **Answer any agronomic question** (irrigation, fertilizer calculation, pest diagnostics, weather impact)\n- **Update your crop lifecycle stage** (e.g., *\"Update crop stage to Flowering\"*)\n- **Complete farm operational tasks** (e.g., *\"Show my tasks\"* or *\"Mark irrigation as completed\"*)\n- **Inspect regional market prices** (e.g., *\"Show Tamil Nadu mandi rates\"*)\n- **Simulate financial outcomes** (e.g., *\"Open What-If Economics\"* or calculate breakeven)",
+      "createdAt": "2026-09-28T05:53:59.408Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "dashboard",
+        "label": "View Farm Dashboard"
+      }
+    },
+    {
+      "id": "msg-user-1790575351449",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "hi what should i do today",
+      "createdAt": "2026-09-28T06:02:31.449Z"
+    },
+    {
+      "id": "msg-1790575351451",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello **Makesh**! How can I assist you and your farm (**Makesh farm**) today?\n\nI am your **AgriSense Farm Copilot**. I have real-time, context-aware access across your entire AgriSense platform:\n- **Standing Crop:** Wheat (Gehun) in the **VEGETATIVE** stage\n- **Field Weather in coimbatore:** 23.8°C, Thunderstorm (84% rain probability, wind 2.2 km/h)\n- **Today's Actions:** **4** tasks awaiting completion\n- **Tamil Nadu Market Rates:** Live wholesale APMC mandi data connected\n\n**What I can do for you right now:**\n- **Answer any agronomic question** (irrigation, fertilizer calculation, pest diagnostics, weather impact)\n- **Update your crop lifecycle stage** (e.g., *\"Update crop stage to Flowering\"*)\n- **Complete farm operational tasks** (e.g., *\"Show my tasks\"* or *\"Mark irrigation as completed\"*)\n- **Inspect regional market prices** (e.g., *\"Show Tamil Nadu mandi rates\"*)\n- **Simulate financial outcomes** (e.g., *\"Open What-If Economics\"* or calculate breakeven)",
+      "createdAt": "2026-09-28T06:02:31.451Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "dashboard",
+        "label": "View Farm Dashboard"
+      }
+    },
+    {
+      "id": "msg-user-1790575379852",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "what is the current weather",
+      "createdAt": "2026-09-28T06:02:59.852Z"
+    },
+    {
+      "id": "msg-1790575379854",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Here is the current operational status for **Makesh farm** (Makesh, 3.5 acres in coimbatore, Tamil Nadu):\n\n- **Active Crop:** Wheat (Gehun) (**VEGETATIVE** stage)\n- **Field Weather:** 23.8°C, Thunderstorm (84% rain probability, wind 2.2 km/h)\n- **Irrigation Guidance:** Postpone irrigation: 84% chance of rain within 24 hours (9.2mm projected). Prevent waterlogging.\n- **Action Tasks:** 4 pending, 0 completed\n- **Tamil Nadu Mandi Benchmark:** Live market prices and state procurement updates connected\n\nHow would you like to proceed? You can ask me any farming question or tell me to perform an action inside the AgriSense app.",
+      "createdAt": "2026-09-28T06:02:59.854Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative",
+        "weatherSummary": "23.8°C, 84% rain"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Makesh farm (coimbatore, Tamil Nadu)",
+        "Field Telemetry: alluvial (pH 6.8), drip",
+        "Open-Meteo Live Weather: 23.8°C, 84% rain probability, wind 2.2 km/h",
+        "Tamil Nadu APMC Mandi Benchmark Feed",
+        "ICAR & Agronomic Standard Operating Procedures"
+      ],
+      "action": {
+        "type": "navigate",
+        "target": "dashboard",
+        "label": "Open Farm Dashboard"
+      }
+    },
+    {
+      "id": "msg-1790674232033",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Here is the economic and yield simulation for your 3.5-acre Wheat farm if you **reduce irrigation by 20%**:\n\n### 📊 What-If Impact Analysis\n\n| Metric | Baseline | Simulated (20% Water Reduction) | Change / Delta |\n| :--- | :--- | :--- | :--- |\n| **Total Yield** | 6,300 kg | 4,914 kg | -1,386 kg (-22% water stress yield loss) |\n| **Gross Revenue** | ₹1,51,200 | ₹1,17,936 | -₹33,264 |\n| **Total Cost** | ₹49,000 | ₹48,020 | -₹980 (marginal savings on pumping) |\n| **Gross Margin (Profit)** | **₹1,02,200** | **₹69,916** | **-₹32,284 (-31.6%)** |\n| **Breakeven Price / kg**| ₹7.78/kg | ₹9.77/kg | +₹1.99/kg |\n| **Risk Assessment** | — | **Favorable** | Still profitable, but significant profit erosion |\n\n### 🌾 Agronomic Advisory\n- **Yield Penalty:** Wheat in the vegetative/flowering stage is highly sensitive to moisture deficit. Cutting irrigation by 20% results in a **22% yield loss** due to terminal water stress.\n- **Financial Impact:** Even though you save a tiny amount on irrigation power/cost, you lose over **₹32,200 in net profit** because grain formation suffers.\n- **Current Weather Note:** Since rain probability in Coimbatore is currently **84%**, natural rainfall may cover your water needs today without manual irrigation, but artificial reduction beyond natural rainfall will hurt your harvest.",
+      "createdAt": "2026-09-29T09:30:32.033Z",
+      "contextSnapshot": {
+        "farmName": "Makesh farm",
+        "cropName": "Wheat (Gehun)",
+        "stage": "vegetative"
+      },
+      "groundingCitations": [
+        "AgriSense Deterministic What-If Engine (FAO-33 Response Index)"
+      ]
+    }
+  ],
+  "marketPrices": [],
+  "diseaseScans": [],
+  "expenses": [],
+  "activeAuthUserId": "auth-farmer-1790572633662"
+}

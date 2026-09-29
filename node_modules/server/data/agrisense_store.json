@@ -1,0 +1,819 @@
+{
+  "farmer": {
+    "id": "farmer-alpha-1",
+    "authUserId": "auth-farmer-alpha",
+    "fullName": "Farmer Alpha",
+    "preferredLanguage": "ta",
+    "farmingExperienceYears": 8,
+    "createdAt": "2026-09-29T09:35:31.263Z",
+    "updatedAt": "2026-09-29T09:35:31.263Z"
+  },
+  "farmers": [
+    {
+      "id": "farmer-1790318552482",
+      "authUserId": "auth-farmer-1790318552482",
+      "fullName": "Makesh",
+      "phoneNumber": "+91-9876543210",
+      "preferredLanguage": "en",
+      "farmingExperienceYears": 5,
+      "approximateBudget": 65000,
+      "createdAt": "2026-09-29T07:02:09.532Z",
+      "updatedAt": "2026-09-29T07:02:09.533Z"
+    },
+    {
+      "id": "farmer-alpha-1",
+      "authUserId": "auth-farmer-alpha",
+      "fullName": "Farmer Alpha",
+      "preferredLanguage": "ta",
+      "farmingExperienceYears": 8,
+      "createdAt": "2026-09-29T09:35:31.263Z",
+      "updatedAt": "2026-09-29T09:35:31.263Z"
+    }
+  ],
+  "farms": [
+    {
+      "id": "farm-1790318552487",
+      "farmerId": "farmer-1790318552482",
+      "farmName": "AGS Farms",
+      "totalAreaAcres": 3.5,
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "villageDistrict": "Coimbatore",
+      "stateProvince": "TamilNadu",
+      "country": "India",
+      "createdAt": "2026-09-29T07:02:09.535Z",
+      "updatedAt": "2026-09-29T07:02:09.535Z"
+    },
+    {
+      "id": "farm-alpha-1",
+      "farmerId": "farmer-alpha-1",
+      "farmName": "Alpha Farmstead",
+      "totalAreaAcres": 4.5,
+      "latitude": 10.787,
+      "longitude": 79.1378,
+      "villageDistrict": "Thanjavur",
+      "stateProvince": "Tamil Nadu",
+      "country": "India",
+      "createdAt": "2026-09-29T09:35:31.265Z",
+      "updatedAt": "2026-09-29T09:35:31.266Z"
+    }
+  ],
+  "fields": [],
+  "soilProfiles": [
+    {
+      "id": "soil-farm-1790318552487",
+      "farmId": "farm-1790318552487",
+      "soilType": "alluvial",
+      "phLevel": 6.8,
+      "drainageQuality": "well_drained"
+    }
+  ],
+  "waterProfiles": [
+    {
+      "id": "water-farm-1790318552487",
+      "farmId": "farm-1790318552487",
+      "waterSource": "borewell",
+      "availabilityStatus": "sufficient",
+      "irrigationMethod": "drip"
+    }
+  ],
+  "crops": [
+    {
+      "id": "crop-wheat",
+      "commonName": "Wheat (Gehun)",
+      "scientificName": "Triticum aestivum",
+      "category": "grain",
+      "suitableSeasons": [
+        "rabi"
+      ],
+      "minTempCelsius": 10,
+      "maxTempCelsius": 25,
+      "optimalRainfallMmMin": 300,
+      "optimalRainfallMmMax": 750,
+      "minSoilPh": 6,
+      "maxSoilPh": 7.5,
+      "preferredSoilTypes": [
+        "alluvial",
+        "clay_loam",
+        "silt_loam"
+      ],
+      "durationDaysMin": 110,
+      "durationDaysMax": 140,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 1800,
+      "estimatedCostPerAcre": 14000,
+      "managementComplexity": "low",
+      "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+    },
+    {
+      "id": "crop-rice",
+      "commonName": "Rice / Paddy (Dhan)",
+      "scientificName": "Oryza sativa",
+      "category": "grain",
+      "suitableSeasons": [
+        "kharif"
+      ],
+      "minTempCelsius": 20,
+      "maxTempCelsius": 38,
+      "optimalRainfallMmMin": 900,
+      "optimalRainfallMmMax": 2000,
+      "minSoilPh": 5.5,
+      "maxSoilPh": 7.2,
+      "preferredSoilTypes": [
+        "clay_loam",
+        "alluvial"
+      ],
+      "durationDaysMin": 120,
+      "durationDaysMax": 155,
+      "waterRequirementLevel": "high",
+      "averageYieldPerAcreKg": 2200,
+      "estimatedCostPerAcre": 18000,
+      "managementComplexity": "medium",
+      "description": "Primary monsoon grain. High water requirement, suitable for heavy soils with standing water retention."
+    },
+    {
+      "id": "crop-cotton",
+      "commonName": "Cotton (Kapas)",
+      "scientificName": "Gossypium hirsutum",
+      "category": "cash",
+      "suitableSeasons": [
+        "kharif"
+      ],
+      "minTempCelsius": 21,
+      "maxTempCelsius": 35,
+      "optimalRainfallMmMin": 500,
+      "optimalRainfallMmMax": 1000,
+      "minSoilPh": 6,
+      "maxSoilPh": 8,
+      "preferredSoilTypes": [
+        "black",
+        "alluvial"
+      ],
+      "durationDaysMin": 150,
+      "durationDaysMax": 180,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 1000,
+      "estimatedCostPerAcre": 22000,
+      "managementComplexity": "high",
+      "description": "High-value cash fiber crop. Thrives in deep black cotton soils with good drainage."
+    },
+    {
+      "id": "crop-mustard",
+      "commonName": "Mustard (Sarson)",
+      "scientificName": "Brassica juncea",
+      "category": "oilseed",
+      "suitableSeasons": [
+        "rabi"
+      ],
+      "minTempCelsius": 10,
+      "maxTempCelsius": 24,
+      "optimalRainfallMmMin": 250,
+      "optimalRainfallMmMax": 500,
+      "minSoilPh": 6,
+      "maxSoilPh": 7.5,
+      "preferredSoilTypes": [
+        "sandy_loam",
+        "alluvial"
+      ],
+      "durationDaysMin": 100,
+      "durationDaysMax": 130,
+      "waterRequirementLevel": "low",
+      "averageYieldPerAcreKg": 800,
+      "estimatedCostPerAcre": 10500,
+      "managementComplexity": "low",
+      "description": "Drought-tolerant winter oilseed with relatively low input cost and high market demand."
+    },
+    {
+      "id": "crop-tomato",
+      "commonName": "Tomato (Tamatar)",
+      "scientificName": "Solanum lycopersicum",
+      "category": "vegetable",
+      "suitableSeasons": [
+        "kharif",
+        "rabi",
+        "zaid",
+        "year_round"
+      ],
+      "minTempCelsius": 15,
+      "maxTempCelsius": 32,
+      "optimalRainfallMmMin": 400,
+      "optimalRainfallMmMax": 700,
+      "minSoilPh": 6,
+      "maxSoilPh": 7,
+      "preferredSoilTypes": [
+        "sandy_loam",
+        "clay_loam",
+        "red"
+      ],
+      "durationDaysMin": 90,
+      "durationDaysMax": 120,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 12000,
+      "estimatedCostPerAcre": 35000,
+      "managementComplexity": "high",
+      "description": "High-value horticultural crop with short duration and high returns, but sensitive to pest pressure and temperature spikes."
+    },
+    {
+      "id": "crop-chickpea",
+      "commonName": "Chickpea / Bengal Gram (Chana)",
+      "scientificName": "Cicer arietinum",
+      "category": "pulse",
+      "suitableSeasons": [
+        "rabi"
+      ],
+      "minTempCelsius": 12,
+      "maxTempCelsius": 28,
+      "optimalRainfallMmMin": 350,
+      "optimalRainfallMmMax": 600,
+      "minSoilPh": 6,
+      "maxSoilPh": 8,
+      "preferredSoilTypes": [
+        "black",
+        "clay_loam",
+        "alluvial"
+      ],
+      "durationDaysMin": 95,
+      "durationDaysMax": 120,
+      "waterRequirementLevel": "low",
+      "averageYieldPerAcreKg": 950,
+      "estimatedCostPerAcre": 11000,
+      "managementComplexity": "low",
+      "description": "Key pulse crop that fixes atmospheric nitrogen, restoring soil health with low water needs."
+    },
+    {
+      "id": "crop-maize",
+      "commonName": "Maize / Corn (Makka)",
+      "scientificName": "Zea mays",
+      "category": "grain",
+      "suitableSeasons": [
+        "kharif",
+        "rabi",
+        "zaid"
+      ],
+      "minTempCelsius": 18,
+      "maxTempCelsius": 34,
+      "optimalRainfallMmMin": 500,
+      "optimalRainfallMmMax": 900,
+      "minSoilPh": 5.8,
+      "maxSoilPh": 7.5,
+      "preferredSoilTypes": [
+        "alluvial",
+        "red",
+        "sandy_loam"
+      ],
+      "durationDaysMin": 85,
+      "durationDaysMax": 110,
+      "waterRequirementLevel": "medium",
+      "averageYieldPerAcreKg": 2400,
+      "estimatedCostPerAcre": 15500,
+      "managementComplexity": "medium",
+      "description": "Versatile cereal for food, feed, and starch. Rapid growth with responsive yield to balanced nutrition."
+    }
+  ],
+  "cropCycles": [
+    {
+      "id": "cycle-1790318552494",
+      "farmId": "farm-1790318552487",
+      "cropId": "crop-wheat",
+      "crop": {
+        "id": "crop-wheat",
+        "commonName": "Wheat (Gehun)",
+        "scientificName": "Triticum aestivum",
+        "category": "grain",
+        "suitableSeasons": [
+          "rabi"
+        ],
+        "minTempCelsius": 10,
+        "maxTempCelsius": 25,
+        "optimalRainfallMmMin": 300,
+        "optimalRainfallMmMax": 750,
+        "minSoilPh": 6,
+        "maxSoilPh": 7.5,
+        "preferredSoilTypes": [
+          "alluvial",
+          "clay_loam",
+          "silt_loam"
+        ],
+        "durationDaysMin": 110,
+        "durationDaysMax": 140,
+        "waterRequirementLevel": "medium",
+        "averageYieldPerAcreKg": 1800,
+        "estimatedCostPerAcre": 14000,
+        "managementComplexity": "low",
+        "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+      },
+      "sowingDate": "2026-09-25",
+      "expectedHarvestDate": "2027-01-13",
+      "currentStage": "harvest",
+      "plantedAreaAcres": 3.5,
+      "status": "active"
+    },
+    {
+      "id": "cycle-1790665312227",
+      "farmId": "farm-1790318552487",
+      "cropId": "crop-wheat",
+      "crop": {
+        "id": "crop-wheat",
+        "commonName": "Wheat (Gehun)",
+        "scientificName": "Triticum aestivum",
+        "category": "grain",
+        "suitableSeasons": [
+          "rabi"
+        ],
+        "minTempCelsius": 10,
+        "maxTempCelsius": 25,
+        "optimalRainfallMmMin": 300,
+        "optimalRainfallMmMax": 750,
+        "minSoilPh": 6,
+        "maxSoilPh": 7.5,
+        "preferredSoilTypes": [
+          "alluvial",
+          "clay_loam",
+          "silt_loam"
+        ],
+        "durationDaysMin": 110,
+        "durationDaysMax": 140,
+        "waterRequirementLevel": "medium",
+        "averageYieldPerAcreKg": 1800,
+        "estimatedCostPerAcre": 14000,
+        "managementComplexity": "low",
+        "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+      },
+      "sowingDate": "2026-09-29",
+      "expectedHarvestDate": "2027-01-17",
+      "currentStage": "harvest",
+      "plantedAreaAcres": 3.5,
+      "status": "active"
+    },
+    {
+      "id": "cycle-1790665329543",
+      "farmId": "farm-1790318552487",
+      "cropId": "crop-wheat",
+      "crop": {
+        "id": "crop-wheat",
+        "commonName": "Wheat (Gehun)",
+        "scientificName": "Triticum aestivum",
+        "category": "grain",
+        "suitableSeasons": [
+          "rabi"
+        ],
+        "minTempCelsius": 10,
+        "maxTempCelsius": 25,
+        "optimalRainfallMmMin": 300,
+        "optimalRainfallMmMax": 750,
+        "minSoilPh": 6,
+        "maxSoilPh": 7.5,
+        "preferredSoilTypes": [
+          "alluvial",
+          "clay_loam",
+          "silt_loam"
+        ],
+        "durationDaysMin": 110,
+        "durationDaysMax": 140,
+        "waterRequirementLevel": "medium",
+        "averageYieldPerAcreKg": 1800,
+        "estimatedCostPerAcre": 14000,
+        "managementComplexity": "low",
+        "description": "Staple winter cereal crop. Requires cool early season and warm dry ripening period."
+      },
+      "sowingDate": "2026-09-29",
+      "expectedHarvestDate": "2027-01-17",
+      "currentStage": "germination",
+      "plantedAreaAcres": 3.5,
+      "status": "active"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-irrig-2026-09-25",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "irrigation",
+      "title": "Inspect root-zone moisture for Wheat (Gehun)",
+      "description": "Check soil 2 inches below surface. If crumbly, apply standard irrigation using your drip system.",
+      "priority": "medium",
+      "dueDate": "2026-09-25",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Routine moisture maintenance for Wheat (Gehun) in vegetative stage."
+    },
+    {
+      "id": "task-stage-2026-09-25",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "pest_monitoring",
+      "title": "Field inspection for Wheat (Gehun)",
+      "description": "Inspect crop canopy uniformity and weed competition in the vegetative stage.",
+      "priority": "medium",
+      "dueDate": "2026-09-25",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Triggered by Wheat (Gehun) lifecycle stage (VEGETATIVE)."
+    },
+    {
+      "id": "task-weather-2026-09-25",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "field_prep",
+      "title": "Optimal weather window for foliar nourishment",
+      "description": "Wind is calm (9.0 km/h) and rain risk is low. Favorable conditions for foliar nutrient or bio-fertilizer application.",
+      "priority": "low",
+      "dueDate": "2026-09-25",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Wind and rain parameters are within safe agrochemical application windows."
+    },
+    {
+      "id": "task-prep-2026-09-25",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "fertilization",
+      "title": "Record farm input expenses",
+      "description": "Log any recent seed, fertilizer, or labor costs in Farm Economics to keep your What-If margin analysis accurate.",
+      "priority": "low",
+      "dueDate": "2026-09-25",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Continuous financial intelligence update."
+    },
+    {
+      "id": "task-irrig-2026-09-29",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "irrigation",
+      "title": "Inspect root-zone moisture for Wheat (Gehun)",
+      "description": "Check soil 2 inches below surface. If crumbly, apply standard irrigation using your drip system.",
+      "priority": "medium",
+      "dueDate": "2026-09-29",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Routine moisture maintenance for Wheat (Gehun) in harvest stage."
+    },
+    {
+      "id": "task-stage-2026-09-29",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "pest_monitoring",
+      "title": "Check harvest maturity indicators",
+      "description": "Examine grain moisture or crop color. Prepare clean threshing/packing equipment.",
+      "priority": "urgent",
+      "dueDate": "2026-09-29",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Triggered by Wheat (Gehun) lifecycle stage (HARVEST)."
+    },
+    {
+      "id": "task-weather-2026-09-29",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "field_prep",
+      "title": "Optimal weather window for foliar nourishment",
+      "description": "Wind is calm (6.9 km/h) and rain risk is low. Favorable conditions for foliar nutrient or bio-fertilizer application.",
+      "priority": "low",
+      "dueDate": "2026-09-29",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Wind and rain parameters are within safe agrochemical application windows."
+    },
+    {
+      "id": "task-prep-2026-09-29",
+      "farmId": "farm-1790318552487",
+      "cropCycleId": "cycle-1790318552494",
+      "category": "fertilization",
+      "title": "Record farm input expenses",
+      "description": "Log any recent seed, fertilizer, or labor costs in Farm Economics to keep your What-If margin analysis accurate.",
+      "priority": "low",
+      "dueDate": "2026-09-29",
+      "completed": false,
+      "generatedBy": "rule_engine",
+      "rationale": "Continuous financial intelligence update."
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-user-1790665861194",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "hi",
+      "createdAt": "2026-09-29T07:11:01.194Z"
+    },
+    {
+      "id": "msg-1790665863313",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Hello Makesh! Welcome to AgriSense. \n\nIt looks like your Wheat crop at AGS Farms is currently at the harvest stage—how are things looking out in the field? \n\nWhether you need advice on wrapping up your wheat harvest, planning your next crop rotation in your alluvial soil, or checking current market prices in Tamil Nadu, I'm here to help. What's on your mind today?",
+      "createdAt": "2026-09-29T07:11:03.313Z",
+      "contextSnapshot": {
+        "farmName": "AGS Farms",
+        "cropName": "Wheat (Gehun)",
+        "stage": "harvest",
+        "weatherSummary": "33°C, Overcast"
+      },
+      "groundingCitations": []
+    },
+    {
+      "id": "msg-user-1790665886356",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "whats the weather",
+      "createdAt": "2026-09-29T07:11:26.356Z"
+    },
+    {
+      "id": "msg-1790665889762",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Right now in Coimbatore, it's 33°C and overcast with low humidity (41%) and a light breeze of about 10.8 km/h. \n\nThere's virtually no chance of rain today (only a 14% probability), which is great news if you are wrapping up your wheat harvest at AGS Farms. \n\nThe weather conditions are stable and optimal if you need to carry out any field work or machinery operations today. Let me know if you need help with anything else!",
+      "createdAt": "2026-09-29T07:11:29.762Z",
+      "contextSnapshot": {
+        "farmName": "AGS Farms",
+        "cropName": "Wheat (Gehun)",
+        "stage": "harvest",
+        "weatherSummary": "33°C, Overcast"
+      },
+      "groundingCitations": []
+    },
+    {
+      "id": "msg-user-1790665899364",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "in salem",
+      "createdAt": "2026-09-29T07:11:39.364Z"
+    },
+    {
+      "id": "msg-1790665901859",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Right now, my live weather telemetry is specifically tracking your farm's location in **Coimbatore**, where it's 33°C and overcast. \n\nWhile I don't have the live radar for Salem directly in front of me at this exact second, Salem (which is just north of us in western Tamil Nadu) generally experiences very similar hot, dry, and overcast pre-monsoon conditions right now, often hovering around 33°C to 35°C with low humidity. \n\nAre you planning some farm work or travel over toward Salem, or did you want to check conditions for a plot of land you have there? If you need specific weather or market details for Salem, just let me know!",
+      "createdAt": "2026-09-29T07:11:41.859Z",
+      "contextSnapshot": {
+        "farmName": "AGS Farms",
+        "cropName": "Wheat (Gehun)",
+        "stage": "harvest",
+        "weatherSummary": "33°C, Overcast"
+      },
+      "groundingCitations": []
+    },
+    {
+      "id": "msg-user-1790665994134",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "what are the risk up to now",
+      "createdAt": "2026-09-29T07:13:14.134Z"
+    },
+    {
+      "id": "msg-1790665997478",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "At AGS Farms, your overall farm risk is currently sitting at a low **24 out of 100**, meaning your operation is in a very stable place right now! \n\nHere is how the risk breaks down across your key categories:\n\n1. **Weather Impact (Score: 20/30 - Normal):** With stable overcast conditions, 33°C temperatures, and very low rain probability (14%), weather risks are minimal. It’s a great window for field work and harvesting.\n2. **Water Security (Score: 20/25 - Secure):** Your borewell water source and sufficient availability mean your irrigation is well-secured.\n3. **Crop Stage Vulnerability (Score: 25/20 - Resilient):** Your wheat crop is reaching the harvest stage, meaning it has successfully made it through its major growth phases.\n4. **Market Volatility (Score: 35/15 - Moderate):** This is your highest relative risk area. Market prices always have standard fluctuations, so timing your post-harvest sales or checking regional mandi trends will be key.\n5. **Cost Margin Buffer (Score: 30/10 - Stable):** Your projected gross margins are looking healthy, providing a strong buffer against input costs.\n\nOverall, things are looking smooth! Are you seeing any specific issues with your wheat as you wrap up the harvest, or are you looking ahead to your next season?",
+      "createdAt": "2026-09-29T07:13:17.478Z",
+      "contextSnapshot": {
+        "farmName": "AGS Farms",
+        "cropName": "Wheat (Gehun)",
+        "stage": "harvest",
+        "weatherSummary": "33°C, Overcast"
+      },
+      "groundingCitations": []
+    },
+    {
+      "id": "msg-user-1790672966723",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "What happens to my farm profit if market price drops 10%?",
+      "createdAt": "2026-09-29T09:09:26.723Z"
+    },
+    {
+      "id": "msg-user-1790672973748",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "Why was this crop recommended for my farm?",
+      "createdAt": "2026-09-29T09:09:33.748Z"
+    },
+    {
+      "id": "msg-user-1790672983785",
+      "conversationId": "default-conv",
+      "role": "user",
+      "content": "What tasks do I have scheduled for today?",
+      "createdAt": "2026-09-29T09:09:43.785Z"
+    },
+    {
+      "id": "msg-1790673344324",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "The current weather in Salem is **33°C** and **overcast**, with a humidity of 54% and a gentle wind speed of 4.9 km/h. \n\nHowever, please note there is a **99% chance of rain (27.7 mm projected)** within the next 24 hours, with thunderstorms forecast. The agro-advisory currently recommends **postponing any irrigation or foliar spraying** in the Salem area to prevent waterlogging and ensure sprays aren't washed away.",
+      "createdAt": "2026-09-29T09:15:44.324Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "Open-Meteo Live Weather Telemetry: Salem (33°C, Overcast)"
+      ]
+    },
+    {
+      "id": "msg-1790673347906",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "If you reduce your irrigation by **20%**, here is how it impacts your farm economics based on your farm's simulation model:\n\n* **Yield Impact:** Because of water stress during the crop cycle, your total yield would drop by about **22%** (from 8,100 kg down to 6,318 kg).\n* **Gross Revenue:** Would drop from ₹1,94,400 to ₹1,51,632.\n* **Total Cost:** Slight savings on operational costs, dropping from ₹63,000 to ₹61,740.\n* **Gross Margin (Profit):** Your profit would decrease by **31.6%** (a drop of ₹41,508), taking your total gross margin down from ₹1,31,400 to **₹89,892**. \n* **Breakeven Price:** Your cost of production per kg would rise from ₹7.78/kg to **₹9.77/kg**.\n\nWhile the simulation notes that the farm remains technically profitable under this 20% cut, the drop in yield significantly reduces your overall profit margin. Let me know if you want to explore other scenarios!",
+      "createdAt": "2026-09-29T09:15:47.906Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "AgriSense Deterministic What-If Engine (FAO-33 Response Index)"
+      ]
+    },
+    {
+      "id": "msg-1790674010263",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "The current weather in Salem is **33°C** and **overcast**, with a humidity of 54% and a wind speed of 4.9 km/h. \n\nPlease note that there is a **99% chance of rain** (with 27.7 mm projected) within the next 24 hours, including thunderstorms. The current agro-advisory for Salem recommends **postponing any irrigation or foliar spraying** to prevent waterlogging and ensure sprays aren't washed away by the incoming rain.",
+      "createdAt": "2026-09-29T09:26:50.263Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "Open-Meteo Live Weather Telemetry: Salem (33°C, Overcast)"
+      ]
+    },
+    {
+      "id": "msg-1790674012754",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "⚠️ **AI Service Notice**\n\nAgriSense AI was unable to generate a response at this moment. Please check your connection and try again.",
+      "createdAt": "2026-09-29T09:26:52.754Z",
+      "groundingCitations": []
+    },
+    {
+      "id": "msg-1790674278520",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "⚠️ **Google Gemini API Key Required**\n\nAgriSense is configured to use Google's real-time **Gemini AI** for dynamic, generative agricultural intelligence. No API key was found in `server/.env`.\n\n**To activate live Gemini AI:**\n1. Get a free API key from [Google AI Studio](https://aistudio.google.com/app/apikey)\n2. Add it to `server/.env`:\n   ```env\n   GEMINI_API_KEY=your_api_key_here\n   ```\n3. Restart or reload your server to chat dynamically with Gemini!",
+      "createdAt": "2026-09-29T09:31:18.520Z",
+      "groundingCitations": []
+    },
+    {
+      "id": "msg-1790674289686",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "The current weather in Salem is **33.1°C** with **overcast** skies. \n\nHere are the additional current conditions:\n* **Humidity:** 54%\n* **Wind Speed:** 5.6 km/h\n* **Rainfall Probability:** 99% (with 27.7 mm projected over the next 24 hours, bringing a high chance of thunderstorms).\n\n**Agro-Advisory:** It is recommended to **postpone irrigation and foliar spraying** today to prevent waterlogging and ensure sprays are not washed away by the incoming rain.",
+      "createdAt": "2026-09-29T09:31:29.686Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "Open-Meteo Live Weather Telemetry: Salem (33.1°C, Overcast)"
+      ]
+    },
+    {
+      "id": "msg-1790674299002",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "If you reduce your irrigation by **20%**, here is how it impacts your farm economics based on your farm's simulation model:\n\n* **Yield Impact:** Due to water stress, your total yield will drop by **22%** (from 8,100 kg down to 6,318 kg).\n* **Gross Revenue:** Drops from ₹1,94,400 to ₹1,51,632.\n* **Total Cost:** Slight reduction in operational costs from ₹63,000 to ₹61,740.\n* **Gross Margin (Profit):** Your profit decreases by **31.6%** (a drop of ₹41,508), taking your total gross margin down from ₹1,31,400 to **₹89,892**.\n* **Breakeven Price:** Your cost of production per kg increases from ₹7.78/kg to **₹9.77/kg**.\n\nWhile the simulation notes that the farm remains technically profitable under this 20% cut, the drop in yield significantly reduces your overall profitability. Let me know if you would like to run any other scenarios!",
+      "createdAt": "2026-09-29T09:31:39.002Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "AgriSense Deterministic What-If Engine (FAO-33 Response Index)"
+      ]
+    },
+    {
+      "id": "msg-1790674461941",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "The current weather in Salem is **33.1°C** and **overcast**. \n\nHere are the details:\n* **Humidity:** 54%\n* **Wind Speed:** 5.6 km/h\n* **Rainfall Probability:** 99% (with 27.7 mm of rain projected over the next 24 hours, including expected thunderstorms).\n\n**Agro-Advisory:** It is strongly recommended to **postpone irrigation and foliar spraying** today to prevent waterlogging and to ensure any sprays are not washed away by the incoming rain.",
+      "createdAt": "2026-09-29T09:34:21.941Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "Open-Meteo Live Weather Telemetry: Salem (33.1°C, Overcast)"
+      ]
+    },
+    {
+      "id": "msg-1790674466434",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Reducing your irrigation water by **20%** has a noticeable impact on your farm's economics and crop yield. Here is the deterministic simulation based on your current farm setup:\n\n### 💧 Yield & Water Stress Impact\n* **Yield Loss:** A 20% reduction in water leads to a **22% yield loss** due to water stress during critical growth stages, bringing total expected yield down from 8,100 kg to **6,318 kg**.\n\n### 💰 Financial Breakdown\n* **Gross Revenue:** Drops from ₹1,94,400 to **₹1,51,632** (a decrease of ₹42,768).\n* **Total Operational Cost:** Decreases slightly from ₹63,000 to **₹61,740** due to minor savings on irrigation pumping costs.\n* **Gross Margin (Profit):** Falls sharply from ₹1,31,400 to **₹89,892** — a **31.6% reduction in your net profit** (a loss of ₹41,508 in margin).\n* **Margin per Acre:** Drops from ₹29,200/acre to **₹19,976/acre**.\n* **Breakeven Price:** Increases from ₹7.78/kg to **₹9.77/kg**, making your production more vulnerable to market price dips.\n\n### 📋 Recommendation & Risk Assessment\n* **Risk Assessment:** Favorable / Manageable (Your farm remains profitable overall, but you absorb a significant hit to your profit margin).\n* **AgriSense Advice:** While cutting irrigation saves a negligible amount on pumping costs, the 22% yield penalty outweighs the water savings. If you must conserve water due to scarcity, consider implementing deficit irrigation only during non-critical growth phases or applying mulching to retain soil moisture rather than a flat 20% cut across the board.",
+      "createdAt": "2026-09-29T09:34:26.434Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "AgriSense Deterministic What-If Engine (FAO-33 Response Index)"
+      ]
+    },
+    {
+      "id": "msg-1790674474009",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "**No, you should postpone irrigation today.**\n\nBased on current weather telemetry for your area:\n* **Rain Forecast:** There is a **99% probability of rain** within the next 24 hours, with an estimated precipitation of **27.7 mm** expected.\n* **Agro-Advisory:** Operating your drip irrigation system today is unnecessary and risks over-saturation. Postponing irrigation will prevent waterlogging in your well-drained alluvial soil and conserve groundwater. \n\n*(Note: Your active crop on record is currently Wheat in the vegetative stage, located across 4.5 acres with drip irrigation.)*",
+      "createdAt": "2026-09-29T09:34:34.009Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Alpha Farmstead (alluvial soil, borewell)",
+        "AgriSense Lifecycle Engine: Crop (Stage: vegetative)",
+        "Open-Meteo Live Weather Telemetry: Salem (33.1°C, Overcast)"
+      ]
+    },
+    {
+      "id": "msg-1790674536780",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "The current weather in Salem is **overcast** with a temperature of **33.1°C** and a relative humidity of **54%**. \n\nThere is a **99% probability of rain** (with around 27.7mm of rainfall projected over the next 24 hours), so agro-advisories recommend postponing any planned irrigation or chemical spraying to prevent waterlogging and wash-off.",
+      "createdAt": "2026-09-29T09:35:36.780Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "Open-Meteo Live Weather Telemetry: Salem (33.1°C, Overcast)"
+      ]
+    },
+    {
+      "id": "msg-1790674542773",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "Here is the financial and operational impact if you reduce your irrigation water by **20%**:\n\n### 📊 Economic Simulation Results\n* **Projected Yield Loss:** **22%** reduction in total yield due to water stress (yielding ~6,318 kg compared to the 8,100 kg baseline).\n* **Gross Revenue:** Drops from ₹1,94,400 to **₹1,51,632** (a reduction of ₹42,768).\n* **Total Operational Costs:** Slight decrease from ₹63,000 to **₹61,740** (saving ₹1,260 on pumping/water costs).\n* **Gross Margin (Profit):** Decreases significantly from ₹1,31,400 to **₹89,892** — a **31.6% drop (-₹41,508)** in overall net profit.\n* **Profitability per Acre:** Drops from ₹29,200/acre to **₹19,976/acre**.\n* **Breakeven Price:** Increases from ₹7.78/kg to **₹9.77/kg**, making your crop more vulnerable to market price fluctuations.\n\n### ⚠️ Risk Assessment & Recommendation\nWhile the simulation rates this scenario as **favorable** (your farm remains profitable overall), cutting irrigation by 20% hits your net margin hard because the 22% loss in yield far outweighs the minor savings on irrigation costs. \n\n**Recommendation:** Unless water availability is critically scarce, it is much more profitable to maintain your current irrigation schedule. If you must conserve water, consider targeted drip irrigation adjustments rather than a blanket 20% reduction during sensitive crop growth stages.",
+      "createdAt": "2026-09-29T09:35:42.773Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "AgriSense Deterministic What-If Engine (FAO-33 Response Index)"
+      ]
+    },
+    {
+      "id": "msg-1790674552138",
+      "conversationId": "default-conv",
+      "role": "assistant",
+      "content": "**No, you should postpone irrigation today.** \n\nHere is the breakdown of current conditions for your farm:\n\n* **Weather Forecast:** There is a **99% probability of rain** today with roughly **27.7 mm of projected rainfall** over the next 24 hours.\n* **Agro-Advisory:** Operating your drip or borewell irrigation today would lead to over-saturation and potential root stress in your alluvial soil. Let the upcoming rainfall handle your crop's water needs and prevent waterlogging.",
+      "createdAt": "2026-09-29T09:35:52.138Z",
+      "contextSnapshot": {
+        "farmName": "Alpha Farmstead"
+      },
+      "groundingCitations": [
+        "AgriSense Farm Database: Alpha Farmstead (alluvial soil, borewell)",
+        "AgriSense Lifecycle Engine: Crop (Stage: vegetative)",
+        "Open-Meteo Live Weather Telemetry: Salem (33.1°C, Overcast)"
+      ]
+    }
+  ],
+  "marketPrices": [],
+  "diseaseScans": [
+    {
+      "id": "scan-1790674545897",
+      "farmId": "farm-alpha-1",
+      "cropName": "Tomato",
+      "affectedPart": "leaves",
+      "condition": "Early Blight",
+      "conditionScientific": "Alternaria solani",
+      "confidencePct": 45,
+      "confidenceRating": "Low / Uncertain",
+      "uncertaintyFactors": "The provided image is a solid green color sample and contains no actual visual plant tissue, leaves, symptoms, or contextual visual data to analyze.",
+      "observations": [
+        "Image displays solid green color with no visible tomato leaf tissue.",
+        "No lesions, concentric rings, or blight symptoms are visible in the provided image."
+      ],
+      "recommendedActions": [
+        "Step 1: Upload a clear, well-lit photograph showing the affected tomato leaves and surrounding symptoms.",
+        "Step 2: Inspect plants physically for characteristic dark brown spots with concentric rings on older leaves.",
+        "Step 3: Consult a local agricultural extension officer once a valid photograph of the symptoms is available."
+      ],
+      "preventionTips": [
+        "Ensure proper plant spacing and drip irrigation to minimize leaf wetness duration."
+      ],
+      "requiresExtensionVerification": true,
+      "safetyNotice": "Disclaimer emphasizing that critical agrochemical applications must be verified by local agricultural extension officers (KVK / Agronomist).",
+      "imageUrl": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "timestamp": "2026-09-29T09:35:45.897Z"
+    },
+    {
+      "id": "scan-1790674469195",
+      "cropName": "Standing Crop",
+      "condition": "Insufficient Image Data / Blank Sample",
+      "conditionScientific": "N/A",
+      "confidencePct": 95,
+      "confidenceRating": "High",
+      "uncertaintyFactors": "The provided image is a completely solid neon green screen containing no plant tissue, leaves, or observable symptoms.",
+      "observations": [
+        "Image consists of a uniform solid green color field",
+        "No crop foliage, symptoms, lesions, or insect vectors are visible"
+      ],
+      "recommendedActions": [
+        "Step 1: Capture a clear, well-lit photograph focusing on the affected leaves showing symptoms.",
+        "Step 2: Ensure the sample is in focus and includes both upper and lower leaf surfaces if applicable.",
+        "Step 3: Resubmit the image for proper diagnostic evaluation."
+      ],
+      "preventionTips": [
+        "Always provide high-resolution, clear, and well-framed images of the affected crop anatomy for accurate AI and agronomic diagnosis."
+      ],
+      "requiresExtensionVerification": false,
+      "safetyNotice": "Disclaimer emphasizing that critical agrochemical applications must be verified by local agricultural extension officers (KVK / Agronomist).",
+      "imageUrl": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "timestamp": "2026-09-29T09:34:29.195Z"
+    }
+  ],
+  "expenses": [],
+  "activeAuthUserId": "auth-farmer-alpha"
+}
